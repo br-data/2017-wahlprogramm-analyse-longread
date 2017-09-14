@@ -21,11 +21,8 @@ module.exports = function (grunt) {
         files: {
 
           'dist/scripts/main.min.js': [
-            'src/scripts/modules/utils.js',
             'src/scripts/modules/navigation.js',
             'src/scripts/modules/marginals.js',
-            'src/scripts/modules/scroll.js',
-            'src/scripts/modules/modal.js',
             'src/scripts/init.js'
           ]
         }
@@ -42,8 +39,6 @@ module.exports = function (grunt) {
         },
 
         src: [
-          'node_modules/video.js/dist/video.min.js',
-          'node_modules/videojs-contrib-hls/dist/videojs-contrib-hls.min.js',
           'dist/scripts/main.min.js'
         ],
 

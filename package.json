@@ -1,12 +1,12 @@
 {
-  "name": "longread-template",
-  "description": "Longread template for BR Data",
+  "name": "wahlprogramm-analyse-longread",
+  "description": "Analysis of manifestos for the German elections 2017",
   "author": "Steffen Kühne",
   "version": "0.0.1",
   "private": true,
   "repository": {
     "type": "git",
-    "url": "git@github.com:digitalegarage/longread-template.git"
+    "url": "git@github.com:digitalegarage/wahlprogramm-analyse-longread.git"
   },
   "scripts": {
     "start": "node node_modules/http-server/bin/http-server ./src -s -o --cors",
@@ -14,6 +14,7 @@
     "dist": "grunt dist"
   },
   "dependencies": {
+    "d3": "^4.10.2"
   },
   "devDependencies": {
     "autoprefixer": "^6.5.3",
