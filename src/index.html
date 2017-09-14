@@ -45,17 +45,21 @@
 
         <h1 style="text-align:center;font-size:2.1em;margin-top:4em;margin-bottom:1.5em;line-height:1.4;">Links. Rechts. Oder.</h1>
 
-        <h1 style="text-align:center;font-size:2.1em;margin-top:4em;margin-bottom:1.5em;line-height:1.4;">Analyse der Wahlprogramme zur Bundestagswahl 2017 🇩🇪</h1>
-
-        <p><strong>Wie nahe sind sich Union und SPD und wie weit rechts steht die AfD? Wir haben die Wahlprogramme einer maschinellen Textanalyse unterzogen. Das Ergebnis: Die Unterschiede zwischen den Parteien liegen oft im Detail, nur eine von ihnen hat eine klare Linie. </strong></p>
+        <h1 style="text-align:center;font-size:2.1em;margin-top:4em;margin-bottom:1.5em;line-height:1.4;">Ein Experiment mit Machine Learning 🇩🇪</h1>
+<!--
+        <p><strong>Wie nahe sind sich Union und SPD und wie weit rechts steht die AfD? Wir haben die Wahlprogramme einer maschinellen Analyse unterzogen. Das Ergebnis: Nur eine Partei hat eine durchweg klare Linie. Bei den anderen liegen die Unterschiede im Detail.</strong></p> -->
 
         <p class="author">– von Steffen Kühne, Oliver Schnuck, Robert Schöffel </p>
 
-        <p>Bunt bedrucktes Papier, das kaum jemand liest - Wahlprogramme haben nicht den besten Ruf. Dabei dienen sie den Parteien nicht nur dazu, ihre Positionen für den Wahlkampf festzulegen, sondern bestimmen maßgeblich die Politik nach der Wahl. Wissenschaftliche Untersuchungen belegen, dass Parteien den Inhalten aus den Programmen in der Regel treu bleiben – egal ob sie in der Regierung oder Opposition landen. </p>
+        <p>Bunt bedrucktes Papier, das kaum jemand liest. Versprechungen, die nicht gehalten werden. Wahlprogramme haben nicht gerade den besten Ruf. Dabei dienen sie den Parteien nicht nur dazu, ihre Positionen für den Wahlkampf festzulegen, sondern sie bestimmen auch nach der Wahl maßgeblich die politischen Handlungen. Wissenschaftliche Untersuchungen belegen, dass Parteien den Inhalten aus den Programmen in der Regel treu bleiben – egal ob sie in der Regierung oder Opposition landen. </p>
 
-        <p>Um ein neutrales und möglichst umfassendes Bild der Wahlprogramme zur Bundestagswahl 2017 zu erhalten, haben wir einen lernenden Algorithmus eingesetzt, der die Aussagen klassifiziert. Untersucht haben wir die Programme der sechs Parteien, die voraussichtlich in den Bundestag einziehen werden. </p>
+        <p>Doch wie kann man die Programme der Parteien vollständig, objektiv und verzerrungsfrei auswerten? Wir haben ein Experiment gewagt und einen lernenden Algorithmus eingesetzt, der die Aussagen in den Texten klassifiziert. Untersucht haben wir die Programme der sechs Parteien, die voraussichtlich in den Bundestag einziehen werden. </p>
 
-        <p>Bezieht man alle Aussagen in den Wahlprogrammen ein, so zeigt sich, dass sich die Union der SPD seit 2002 nicht wirklich angenähert hat. Allerdings ist sie deutlich nach links gerückt – genauso wie die Sozialdemokraten auch. Selbst die FDP rückt im Vergleich zu 2013 nach links – unter anderem wegen des starken Fokus auf Bildung. O-Ton: Gab es einen Linksruck?</p>
+        <h2>Wo stehen die Parteien?</h2>
+
+        <p>Bezieht man alle Aussagen in den Wahlprogrammen ein, so zeigt sich, dass sich die Union der SPD nicht angenähert hat, wie oft behauptet wird. Das liegt allerdings daran, dass Union und SPD gleichermaßen nach links gerückt sind. O-Ton Politologe: Gab es einen Linksruck?</p>
+
+        <p>Auch die FDP hat sich in unserer Analyse nach links bewegt, was der offiziellen Wahrnehmung widerspricht. Allerdings nur auf den ersten Blick, wie die tiefere Analyse zeigen wird.</p>
       </div>
 
 <!--       <div class="marginal right">
@@ -68,22 +72,22 @@
 
         <div id="rile-timeline" class="chart"></div>
         <p class="caption">Links-Rechts-Einteilung der Parteien aufgrund der in den Wahlprogrammen getroffenen Aussagen, Quelle: <a href="https://manifestoproject.wzb.eu/" target='blank'>MARPOR</a> (2002-2013), eigene Berechnung (2017).</p>
-      </div>
+      </div> 
 
       <div class="block">
 
         <h2>Das Themenspektrum der Parteien</h2>
 
-        <p>Doch ist eine politische Einteilung nach Links und Rechts überhaupt noch zeitgemäß? Insbesondere an der Position der AfD wird deutlich, dass diese einfache Verortung der Parteien der Komplexität und Vielfalt politischer Realität nicht immer gerecht wird. In anderen Modellen wird die Skala deshalb um eine Dimension erweitert, beispielsweise um Parteien zusätzlich zur Links-Rechts-Position entlang der Achse <a href="https://www.politicalcompass.org/germany2017" target='blank'>autoritär und libertär"</a> oder <a href="http://regierungsforschung.de/wp-content/uploads/2017/09/05092017_regierungsforschung.de_Switek_Krouwel_Thomeczek_Vermessung-der-Parteienlandschaft-vor-der-Bun-destagswahl-2017-mit-dem-Bundeswahlkompass-1.pdf" target=blank>"progressiv und konservativ"</a> einzuordnen. </p>
+        <p>Doch ist eine politische Einteilung nach Links und Rechts überhaupt noch zeitgemäß? Insbesondere an der Position der AfD wird deutlich, dass diese einfache Verortung der Parteien der Komplexität und Vielfalt politischer Realität nicht immer gerecht wird. In einigen wissenschaftlichen Modellen wird die Skala deshalb um eine Dimension erweitert, beispielsweise um Parteien zusätzlich zur Links-Rechts-Position entlang der Achse <a href="https://www.politicalcompass.org/germany2017" target='blank'>autoritär und libertär"</a> oder <a href="http://regierungsforschung.de/wp-content/uploads/2017/09/05092017_regierungsforschung.de_Switek_Krouwel_Thomeczek_Vermessung-der-Parteienlandschaft-vor-der-Bun-destagswahl-2017-mit-dem-Bundeswahlkompass-1.pdf" target=blank>"progressiv und konservativ"</a> einzuordnen. </p>
 
-        <p>Ein differenzierteres Bild ergibt sich auch, wenn man die Wahlprogramme getrennt nach den darin behandelten Themenkomplexen analysiert. Für diese Analyse haben wir die Aussagen in den Texten automatisiert den sechs großen Politikfeldern zugeordnet, die auch in der Wissenschaft Verwendung finden. Bei dieser Aufschlüsselung fällt ins Auge, dass alle Parteien dem Politikfeld "Wohlfahrt und Lebensqualität" am meisten Gewicht beimessen. Hierzu zählen beispielsweise Aussagen zum Wohlfahrtsstaat, Umweltschutz, Gleichstellung oder Kulturförderung. Wenn es um Wirtschaftspolitik oder Außenbeziehungen geht, zeigen sich hingegen deutliche Unterschiede zwischen den Parteien. </p>
+        <p>Ein differenzierteres Bild ergibt sich aber bereits, wenn man die Wahlprogramme getrennt nach den darin behandelten Themenkomplexen analysiert. Für diese Analyse haben wir die Aussagen in den Texten automatisiert den folgenden sechs großen Politikfeldern zugeordnet, die auch in der Wissenschaft Verwendung finden. Bei dieser Aufschlüsselung fällt ins Auge, dass alle Parteien dem Politikfeld "Wohlfahrt und Lebensqualität" am meisten Gewicht beimessen. Hierzu zählen beispielsweise Aussagen zum Wohlfahrtsstaat, Umweltschutz, Gleichstellung oder Kulturförderung. Wenn es um Wirtschaftspolitik oder Außenbeziehungen geht, zeigen sich hingegen deutliche Unterschiede zwischen den Parteien. </p>
       </div>
 
        Hier der Chart: Aussagen pro Politikfeld nach Partei, gewichtet nach Textlänge
 
       <div class="block">
 
-        <p>Die Schwerpunkte der Parteien werden noch greifbarer, wenn man ins Detail geht und die Anzahl der konkreten Aussagen auswertet. Auch hier bestätigt sich das Bild, dass die AfD und Die Linke sehr viel Gewicht auf soziale Themen legen, auch die SPD setzt ähnliche Schwerpunkte. Für die FDP hingegen stehen nicht überraschend die Themen ökonomische und politische Freiheit und Bürgerrechte im Vordergrund, das Regierungsprogramm von CDU/CSU geht in überdurchschnittlich vielen Aussagen auf Technik und Infrastruktur ein, wozu auch Aussagen zur Digitalisierung gehören. </p>
+        <p>Die Schwerpunkte der Parteien werden noch greifbarer, wenn man ins Detail geht und die Anzahl der konkreten Aussagen auswertet. Auch hier bestätigt sich das Bild, dass die AfD und Die Linke sehr viel Gewicht auf soziale Themen legen, auch die SPD setzt ähnliche Schwerpunkte. Bei der FDP hingegen steht neben ihren traditionellen Themen ökonomische und politische Freiheit die Bildungspolitik stark im Fokus. Diese Tatsache erklärt auch, warum die Liberalen auf unserer Links-Rechts-Skala nach links gerutscht sind. Fast ebenso deutlich setzt sich das Regierungsprogramm von CDU/CSU ab, das in überdurchschnittlich vielen Passagen auf die Themen Technik und Infrastruktur, wozu auch Aussagen zur Digitalisierung gehören, eingeht. </p>
 
         <table>
           <thead>
@@ -117,6 +121,10 @@
       </div>
 
       <div class="block">
+
+        <h2>Einordnung nach links und rechts</h2>
+        <p>Hier noch beschreiben, was wir jetzt machen --> Einordnung nach links und rechts aufgeschlüsselt nach Domains</p>
+
         <h2>Wohlfahrt und Lebensqualität</h2>
         <p>Im Themenkomplex „Wohlfahrt und Lebensqualität“ liegen alle Parteien recht nah beisammen, was nicht verwunderlich ist. Denn Themen wie Bildung, Wohlfahrt und Kultur bringen wenig Potenzial für eine Polarisierung mit sich. Dass sich die AfD tendenziell nach rechts absetzt, lässt sich auf einige wenige Forderungen wie die nach einer deutschen Leitkultur zurückführen. In der öffentlichen Wahrnehmung ist diese Position allerdings eine der Hauptcharakteristika der Partei – die Schwerpunkte im Wahlprogramm müssen also nicht unbedingt mit der öffentlichen Wahrnehmung und der Themensetzung im Wahlkampf übereinstimmen. </p>
 
@@ -142,6 +150,12 @@
         <h2>Gesellschaftspolitik</h2>
 
         <p>Die größte Einigkeit besteht im Politikfeld Gesellschaft. Bei allen Parteien finden sich etwa Forderungen zur Sicherheit und einer effektiven Bekämpfung der Kriminalität. Während die CDU/CSU christliche Werte ansprechen, betonen die Grünen und Die Linken  die Wichtigkeit von gesellschaftlichem Engagement. Ideologisch zwar unterschiedliche Ansätze, in der hier untersuchten Themensetzung jedoch ähnlich. </p>
+      </div>
+
+      <div class="block">
+
+        <h2>Fazit</h2>
+        <p>Fazit</p>
       </div>
 
  <!--
