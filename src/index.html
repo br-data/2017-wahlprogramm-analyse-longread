@@ -59,14 +59,14 @@
       </div>
 
       <div class="marginal right">
+
         <p class="dark-grey"><i class="icon-info-circled"></i><strong>Diagramm</strong></p>
         <p>Links-Rechts-Einteilung der Parteien aufgrund der in den Wahlprogrammen getroffenen Aussagen, Quelle: <a href="https://manifestoproject.wzb.eu/" target='blank'>MARPOR</a> (2002-2013), eigene Berechnung (2017).</p>
       </div>
 
       <div class="block">
-        <div class="embed ratio-16-9">
-          <iframe src="charts/bar"></iframe>
-        </div>
+
+        <div id="rile-timeline" class="chart"></div>
         <p class="caption">Links-Rechts-Einteilung der Parteien aufgrund der in den Wahlprogrammen getroffenen Aussagen, Quelle: <a href="https://manifestoproject.wzb.eu/" target='blank'>MARPOR</a> (2002-2013), eigene Berechnung (2017).</p>
       </div>
 
@@ -87,19 +87,24 @@
       <!-- <p class="caption">Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing.</p> -->
 
       <div class="block">
-        <p>Die Schwerpunkte der Parteien werden greifbar, wenn man ins Detail geht und die konkreten Aussagen untersucht. Auch hier bestätigt sich das Bild, dass die AfD und Die Linke sehr viel Gewicht auf soziale Themen legen, auch die SPD setzt ähnliche Schwerpunkte. Für die FDP hingegen stehen nicht überraschend die Themen ökonomische und politische Freiheit und Bürgerrechte im Vordergrund, das Regierungsprogramm von CDU/CSU geht in überdurchschnittlich vielen Aussagen auf Technik und Infrastruktur ein, wozu auch Aussagen zur Digitalisierung gehören.
-        </p>
-      </div>
 
-      Hier kommt die Tabelle mit den meist verwendeten Codes hin
+        <p>Die Schwerpunkte der Parteien werden noch greifbarer, wenn man ins Detail geht und die Anzahl der konkreten Aussagen auswertet. Auch hier bestätigt sich das Bild, dass die AfD und Die Linke sehr viel Gewicht auf soziale Themen legen, auch die SPD setzt ähnliche Schwerpunkte. Für die FDP hingegen stehen nicht überraschend die Themen ökonomische und politische Freiheit und Bürgerrechte im Vordergrund, das Regierungsprogramm von CDU/CSU geht in überdurchschnittlich vielen Aussagen auf Technik und Infrastruktur ein, wozu auch Aussagen zur Digitalisierung gehören. </p>
 
-
-      <div class="marginal right">
-        <p class="br-blue"><i class="icon-help-circled"></i><strong>Daten</strong></p>
-        <p>Curabitur sodales ligula in libero. Sed dignissim lacinia nunc.</p>
-      </div>
-
-      <div class="block">
+        <table>
+          <thead>
+            <tr>
+              <th>Temperatur</th><th>A</th><th>B</th><th>C</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="Temperatur">Sommer</td><td data-label="A">2,1</td><td data-label="B">3,5</td><td data-label="C">7,4</td>
+            </tr>
+            <tr>
+              <td data-label="Temperatur">Winter</td><td data-label="A">-2,8</td><td data-label="B">-2,4</td><td data-label="C">0,2</td>
+            </tr>
+          </tbody>
+        </table>
 
         <h2>Wohlfahrt und Lebensqualität</h2>
         <p>Im Themenkomplex „Wohlfahrt und Lebensqualität“ liegen alle Parteien recht nah beisammen, was nicht verwunderlich ist. Denn Themen wie Bildung, Wohlfahrt und Kultur bringen wenig Potenzial für eine Polarisierung mit sich. Dass sich die AfD tendenziell nach rechts absetzt, lässt sich auf einige wenige Forderungen wie die nach einer deutschen Leitkultur zurückführen. In der öffentlichen Wahrnehmung ist diese Position allerdings eine der Hauptcharakteristika der Partei – die Schwerpunkte im Wahlprogramm müssen also nicht unbedingt mit der öffentlichen Wahrnehmung und der Themensetzung im Wahlkampf übereinstimmen. </p>
@@ -201,8 +206,11 @@
     </footer>
 
     <!-- build:js scripts/main.min.js -->
+    <script type="text/javascript" src="http://web.br.de/interaktiv/assets//libraries/d3/d3.v4.min.js"></script>
+
     <script type="text/javascript" src="scripts/modules/navigation.js"></script>
     <script type="text/javascript" src="scripts/modules/marginals.js"></script>
+    <script type="text/javascript" src="scripts/modules/rileTimeline.js"></script>
 
     <script type="text/javascript" src="scripts/init.js"></script>
     <!-- endbuild -->
