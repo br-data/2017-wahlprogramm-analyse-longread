@@ -1,0 +1,167 @@
+[
+  {
+    "key": "AfD",
+    "values": [
+      {
+        "date": 2013,
+        "rile": -0.04999999999999999,
+        "party": "AfD"
+      },
+      {
+        "date": 2017,
+        "rile": -0.25,
+        "party": "AfD"
+      }
+    ]
+  },
+  {
+    "key": "CDU/CSU",
+    "values": [
+      {
+        "date": 2002,
+        "rile": 0.36644295302013424,
+        "party": "CDU/CSU"
+      },
+      {
+        "date": 2005,
+        "rile": 0.4962593516209477,
+        "party": "CDU/CSU"
+      },
+      {
+        "date": 2009,
+        "rile": 0.18363064008394545,
+        "party": "CDU/CSU"
+      },
+      {
+        "date": 2013,
+        "rile": 0.048034934497816574,
+        "party": "CDU/CSU"
+      },
+      {
+        "date": 2017,
+        "rile": -0.12,
+        "party": "CDU/CSU"
+      }
+    ]
+  },
+  {
+    "key": "Die Linke",
+    "values": [
+      {
+        "date": 2002,
+        "rile": -0.3448275862068966,
+        "party": "Die Linke"
+      },
+      {
+        "date": 2005,
+        "rile": -0.5986622073578595,
+        "party": "Die Linke"
+      },
+      {
+        "date": 2009,
+        "rile": -0.5,
+        "party": "Die Linke"
+      },
+      {
+        "date": 2013,
+        "rile": -0.6056737588652482,
+        "party": "Die Linke"
+      },
+      {
+        "date": 2017,
+        "rile": -0.57,
+        "party": "Die Linke"
+      }
+    ]
+  },
+  {
+    "key": "FDP",
+    "values": [
+      {
+        "date": 2002,
+        "rile": 0.08708133971291866,
+        "party": "FDP"
+      },
+      {
+        "date": 2005,
+        "rile": 0.32967032967032966,
+        "party": "FDP"
+      },
+      {
+        "date": 2009,
+        "rile": 0.08304498269896196,
+        "party": "FDP"
+      },
+      {
+        "date": 2013,
+        "rile": 0.2493112947658402,
+        "party": "FDP"
+      },
+      {
+        "date": 2017,
+        "rile": -0.15,
+        "party": "FDP"
+      }
+    ]
+  },
+  {
+    "key": "Grüne",
+    "values": [
+      {
+        "date": 2002,
+        "rile": -0.287001287001287,
+        "party": "Grüne"
+      },
+      {
+        "date": 2005,
+        "rile": -0.22439585730724976,
+        "party": "Grüne"
+      },
+      {
+        "date": 2009,
+        "rile": -0.2950423216444982,
+        "party": "Grüne"
+      },
+      {
+        "date": 2013,
+        "rile": -0.4048706240487063,
+        "party": "Grüne"
+      },
+      {
+        "date": 2017,
+        "rile": -0.22,
+        "party": "Grüne"
+      }
+    ]
+  },
+  {
+    "key": "SPD",
+    "values": [
+      {
+        "date": 2002,
+        "rile": 0.07746478873239437,
+        "party": "SPD"
+      },
+      {
+        "date": 2005,
+        "rile": -0.043879907621247126,
+        "party": "SPD"
+      },
+      {
+        "date": 2009,
+        "rile": -0.36135957066189617,
+        "party": "SPD"
+      },
+      {
+        "date": 2013,
+        "rile": -0.40058651026392966,
+        "party": "SPD"
+      },
+      {
+        "date": 2017,
+        "rile": -0.43,
+        "party": "SPD"
+      }
+    ]
+  }
+]

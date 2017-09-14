@@ -1,5 +1,4 @@
 @import url(http://web.br.de/interaktiv/assets/fonts/open-sans/open-sans-v13-light.css);
-@import url(http://web.br.de/interaktiv/assets/libraries/videojs/v5/video-js.min.css);
 html {
   box-sizing: border-box; }
 
@@ -536,5 +535,12 @@ footer {
   footer .ard {
     margin-left: 15px;
     width: 138px; }
+
+.chart svg {
+  overflow: visible; }
+
+.chart svg text {
+  font-size: 12px;
+  font-weight: 300; }
 
 /*# sourceMappingURL=main.css.map */
