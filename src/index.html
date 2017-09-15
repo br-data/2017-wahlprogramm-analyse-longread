@@ -53,16 +53,16 @@
 
         <p>Bunt bedrucktes Papier, das kaum jemand liest. Versprechungen, die nicht gehalten werden. Wahlprogramme haben nicht gerade den besten Ruf. Dabei dienen sie den Parteien nicht nur dazu, ihre Positionen für den Wahlkampf festzulegen, sondern sie bestimmen auch nach der Wahl maßgeblich die politischen Handlungen. <a href="https://democracy.blog.wzb.eu/2017/07/31/wahlprogramme-besser-als-ihr-ruf/#more-2341" target='blank'>Wissenschaftliche Untersuchungen </a>belegen, dass Parteien den Inhalten aus den Programmen in der Regel treu bleiben – egal ob sie in der Regierung oder Opposition landen. </p>
 
-        <p>Doch wie kann man die Programme der Parteien vollständig, objektiv und verzerrungsfrei auswerten? Wir haben ein Experiment gewagt und einen lernenden Algorithmus eingesetzt, der die Aussagen in den Texten automatisiert klassifiziert - und zwar nach den Kategorien, die auch in der Politikwissenschaft breite Verwendung finden. Untersucht haben wir die Programme der sechs Parteien, die voraussichtlich in den Bundestag einziehen werden. </p>
+        <p>Doch wie kann man die Programme der Parteien vollständig, objektiv und verzerrungsfrei auswerten? Wir haben ein Experiment gewagt und einen lernenden Algorithmus eingesetzt, der die Aussagen in den Texten automatisiert klassifiziert - und zwar nach den Kategorien, die auch in der Politikwissenschaft breite Verwendung finden. Dazu gehört auch eine Einteilung der Aussagen in politisch rechts oder links. </p>
 
         <h2>Wo stehen die Parteien?</h2>
 
-        <p>Bezieht man alle Aussagen in den Wahlprogrammen ein, so zeigt sich, dass sich die Union der SPD nicht angenähert hat, wie oft behauptet wird. Das liegt allerdings daran, dass Union und SPD gleichermaßen nach links gerückt sind. O-Ton Politologe: Gab es einen Linksruck?</p>
-
-        <p>Auch die FDP hat sich in unserer Analyse nach links bewegt, was der offiziellen Wahrnehmung widerspricht. Allerdings nur auf den ersten Blick, wie die tiefere Analyse zeigen wird.</p>
+        <p>Untersucht haben wir die Wahlprogramme der sechs Parteien, die voraussichtlich in den Bundestag einziehen werden. Bezieht man all ihre Aussagen ein, so zeigt sich, dass sich die Union der SPD nicht angenähert hat, wie oft behauptet wird. Das liegt allerdings daran, dass Union und SPD gleichermaßen nach links gerückt sind. Auch die FDP hat sich in unserer Analyse nach links bewegt, was der öffentlichen Wahrnehmung widerspricht - allerdings nur auf den ersten Blick, wie die tiefere Analyse zeigen wird. Die Linke steht wie zu erwarten am linken Rand, während die Grünen in die Mitte gerückt sind. Warum steht die AfD nicht ganz rechts? Hier wird eines der Probleme der automatisierten Links-Rechts-Kategorisierung deutlich - dazu später mehr.</p>
       </div>
 
       <div class="block">
+
+        <h2>Entwicklung der Parteien auf der Links-Rechts-Skala</h2>
 
         <div id="rile-timeline" class="chart"></div>
         <p class="caption">Links-Rechts-Einteilung der Parteien aufgrund der in den Wahlprogrammen getroffenen Aussagen, Quelle: <a href="https://manifestoproject.wzb.eu/" target='blank'>MARPOR</a> (2002-2013), eigene Berechnung (2017).</p>
@@ -70,15 +70,17 @@
 
       <div class="block">
 
-        <h2>Das Themenspektrum der Parteien</h2>
+        <p>Insbesondere an der Position der AfD wird deutlich, dass eine einfache Verortung der Parteien auf der Links-Rechts-Skala der Komplexität und Vielfalt politischer Realität nicht immer gerecht wird. In einigen wissenschaftlichen Modellen wird die Skala deshalb um eine Dimension erweitert, beispielsweise um Parteien zusätzlich entlang der Achse <a href="https://www.politicalcompass.org/germany2017" target='blank'>autoritär und libertär"</a> oder <a href="http://regierungsforschung.de/wp-content/uploads/2017/09/05092017_regierungsforschung.de_Switek_Krouwel_Thomeczek_Vermessung-der-Parteienlandschaft-vor-der-Bun-destagswahl-2017-mit-dem-Bundeswahlkompass-1.pdf" target=blank>"progressiv und konservativ"</a> einzuordnen. </p>
 
-        <p>Doch ist eine politische Einteilung nach Links und Rechts überhaupt noch zeitgemäß? Insbesondere an der Position der AfD wird deutlich, dass diese einfache Verortung der Parteien der Komplexität und Vielfalt politischer Realität nicht immer gerecht wird. In einigen wissenschaftlichen Modellen wird die Skala deshalb um eine Dimension erweitert, beispielsweise um Parteien zusätzlich zur Links-Rechts-Position entlang der Achse <a href="https://www.politicalcompass.org/germany2017" target='blank'>autoritär und libertär"</a> oder <a href="http://regierungsforschung.de/wp-content/uploads/2017/09/05092017_regierungsforschung.de_Switek_Krouwel_Thomeczek_Vermessung-der-Parteienlandschaft-vor-der-Bun-destagswahl-2017-mit-dem-Bundeswahlkompass-1.pdf" target=blank>"progressiv und konservativ"</a> einzuordnen. </p>
+        <p>Ein differenzierteres Bild ergibt sich aber bereits, wenn man die Wahlprogramme getrennt nach den darin behandelten Themenkomplexen analysiert. Hierfür hat unser Algorithmus die Aussagen in den Texten den sechs großen Politikfeldern zugeordnet. Bei dieser Aufschlüsselung fällt ins Auge, dass alle Parteien dem Politikfeld "Wohlfahrt und Lebensqualität" am meisten Gewicht beimessen. Hierzu zählen beispielsweise Aussagen zu Wohlfahrtsstaat, Umweltschutz, Gleichstellung oder Kulturförderung. Wenn es um die Politikfelder Wirtschaftspolitik oder Außenbeziehungen geht, zeigen sich hingegen deutliche Unterschiede zwischen den Parteien. </p>
 
-        <p>Ein differenzierteres Bild ergibt sich aber bereits, wenn man die Wahlprogramme getrennt nach den darin behandelten Themenkomplexen analysiert. Für diese Analyse haben wir die Aussagen in den Texten automatisiert den folgenden sechs großen Politikfeldern zugeordnet, die auch in der Wissenschaft Verwendung finden. Bei dieser Aufschlüsselung fällt ins Auge, dass alle Parteien dem Politikfeld "Wohlfahrt und Lebensqualität" am meisten Gewicht beimessen. Hierzu zählen beispielsweise Aussagen zum Wohlfahrtsstaat, Umweltschutz, Gleichstellung oder Kulturförderung. Wenn es um Wirtschaftspolitik oder Außenbeziehungen geht, zeigen sich hingegen deutliche Unterschiede zwischen den Parteien. </p>
+        <h2>Die Themengewichtung der Parteien</h2>
 
         <div id="domain-comparison" class="chart"></div>
 
-        <p>Die Schwerpunkte der Parteien werden noch greifbarer, wenn man ins Detail geht und die Anzahl der konkreten Aussagen auswertet. Auch hier bestätigt sich das Bild, dass die AfD und Die Linke sehr viel Gewicht auf soziale Themen legen, auch die SPD setzt ähnliche Schwerpunkte. Bei der FDP hingegen steht neben ihren traditionellen Themen ökonomische und politische Freiheit die Bildungspolitik stark im Fokus. Diese Tatsache erklärt auch, warum die Liberalen auf unserer Links-Rechts-Skala nach links gerutscht sind. Fast ebenso deutlich setzt sich das Regierungsprogramm von CDU/CSU ab, das in überdurchschnittlich vielen Passagen auf die Themen Technik und Infrastruktur, wozu auch Aussagen zur Digitalisierung gehören, eingeht. </p>
+        <p class="caption">Aussagen nach Politikfeld, gewichtet nach Textlänge</p>
+
+        <p>Die Schwerpunkte der Parteien werden noch greifbarer, wenn man ins Detail geht und die Anzahl der konkreten Aussagen auswertet, die jedem Politikfeld zugrunde liegen. Auch hier bestätigt sich das Bild, dass die AfD und Die Linke sehr viel Gewicht auf soziale Themen legen, auch die SPD setzt ähnliche Schwerpunkte. Bei der FDP hingegen steht neben ihrem traditionellen Thema "ökonomische und politische Freiheit" die Bildungspolitik im Fokus. Diese Tatsache erklärt auch, warum die Liberalen auf der oben gezeigten Skala nach links gerutscht sind, da die Forderung nach besseren Bildungschancen klassischerweise mit linker Politik verbunden ist - so auch in dem von uns adaptierten Modell das Manifesto Project. Fast ebenso deutlich setzt sich das Regierungsprogramm von CDU/CSU ab, das in überdurchschnittlich vielen Passagen auf die Themen Technik und Infrastruktur eingeht - wozu auch Aussagen zur Digitalisierung gehören. </p>
 
         <table>
           <thead>
@@ -88,22 +90,22 @@
           </thead>
           <tbody>
             <tr>
-              <td data-label="Parteien">AfD</td><td data-label="1">Ausbau des Wohlfahrtsstaates</td><td data-label="2">Soziale Gerechtigkeit</td><td data-label="3">Freiheit und Bürgerrechte</td>
+              <td data-label="Parteien">CDU/CSU</td><td data-label="1">Infrastruktur und Technologie</td><td data-label="2">Ausbau des Wohlfahrtsstaates</td><td data-label="3">Ausbau internationaler Beziehungen</td>
+            </tr>
+            <tr>
+              <td data-label="Parteien">SPD</td><td data-label="1">Soziale Gerechtigkeit</td><td data-label="2">Ausbau des Wohlfahrtsstaates</td><td data-label="3">Infrastruktur und Technologie</td>
+            </tr>
+             <tr>
+              <td data-label="Parteien">Die Linke</td><td data-label="1">Soziale Gerechtigkeit</td><td data-label="2">Ausbau des Wohlfahrtsstaates</td><td data-label="3">Umweltschutz</td>
             </tr>
             <tr>
               <td data-label="Parteien">Bündnis 90/DIE GRÜNEN</td><td data-label="1">Umweltschutz</td><td data-label="2">Soziale Gerechtigkeit</td><td data-label="3">Freiheit und Bürgerrechte</td>
             </tr>
             <tr>
-              <td data-label="Parteien">CDU/CSU</td><td data-label="1">Infrastruktur und Technologie</td><td data-label="2">Ausbau des Wohlfahrtsstaates</td><td data-label="3">Ausbau internationaler Beziehungen</td>
-            </tr>
-            <tr>
-              <td data-label="Parteien">Die Linke</td><td data-label="1">Soziale Gerechtigkeit</td><td data-label="2">Ausbau des Wohlfahrtsstaates</td><td data-label="3">Umweltschutz</td>
-            </tr>
-            <tr>
               <td data-label="Parteien">FDP</td><td data-label="1">Freiheit und Bürgerrechte</td><td data-label="2">Investitionen in Bildung</td><td data-label="3">Soziale Gerechtigkeit</td>
             </tr>
-            <tr>
-              <td data-label="Parteien">SPD</td><td data-label="1">Soziale Gerechtigkeit</td><td data-label="2">Ausbau des Wohlfahrtsstaates</td><td data-label="3">Infrastruktur und Technologie</td>
+             <tr>
+              <td data-label="Parteien">AfD</td><td data-label="1">Ausbau des Wohlfahrtsstaates</td><td data-label="2">Soziale Gerechtigkeit</td><td data-label="3">Freiheit und Bürgerrechte</td>
             </tr>
           </tbody>
         </table>
