@@ -65,7 +65,13 @@ function init() {
     clearTimeout(timeout);
     timeout = setTimeout(function () {
 
-      chart1.resize();
+      timeline.resize();
+      comparison.resize();
+      welfare.resize();
+      economy.resize();
+      external.resize();
+      society.resize();
+
       marginals.reorder();
     }, 200);
   };
