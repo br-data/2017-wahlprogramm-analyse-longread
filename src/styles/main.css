@@ -298,12 +298,12 @@ table {
   width: 100%;
   border-collapse: collapse;
   border-spacing: 0;
-  margin-bottom: 2em; }
+  line-height: 1.3; }
 
 td, th {
   border: 1px solid #f0f0f4;
   text-align: left;
-  padding: 0 .5em;
+  padding: .25em .5em;
   vertical-align: top; }
 
 th {
@@ -549,5 +549,43 @@ footer {
   padding-right: 1em; }
   .chart .small p {
     margin-top: 0; }
+
+.circle {
+  margin-bottom: -2px;
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  border: 2px solid;
+  border-radius: 100%; }
+  .circle.afd {
+    border-color: #129ee6; }
+  .circle.cducsu {
+    border-color: #121212; }
+  .circle.fdp {
+    border-color: #ffdd00; }
+  .circle.spd {
+    border-color: #d71f1d; }
+  .circle.gruene {
+    border-color: #0a8000; }
+  .circle.linke {
+    border-color: #be3075; }
+
+.afd {
+  color: #129ee6; }
+
+.cducsu {
+  color: #121212; }
+
+.fdp {
+  color: #ffdd00; }
+
+.spd {
+  color: #d71f1d; }
+
+.gruene {
+  color: #0a8000; }
+
+.linke {
+  color: #be3075; }
 
 /*# sourceMappingURL=main.css.map */
