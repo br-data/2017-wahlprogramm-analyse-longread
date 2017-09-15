@@ -2,10 +2,21 @@
 
   svg {
     overflow: visible;
+
+    text {
+      font-size: 12px;
+      font-weight: 300;
+    }
   }
 
-  svg text {
-    font-size: 12px;
-    font-weight: 300;
+  .small {
+    vertical-align: top;
+    display: inline-block;
+    width: 33%;
+    padding-right: 1em;
+
+    p {
+      margin-top: 0;
+    }
   }
 }

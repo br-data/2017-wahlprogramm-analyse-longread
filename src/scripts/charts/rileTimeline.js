@@ -2,11 +2,11 @@ var RileTimeline = function () {
 
   var id, data, colors;
 
-  function init(_id, _data, _colors) {
+  function init(options) {
 
-    id = _id;
-    data = _data;
-    colors = _colors;
+    id = options.id;
+    data = options.data;
+    colors = options.colors;
 
     draw();
   }

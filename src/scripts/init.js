@@ -6,6 +6,7 @@ function init() {
   var timeout;
 
   var chart1 = new RileTimeline();
+  var chart2 = new DomainComparison();
 
   var colors = {
     'AfD': '#129ee6',
@@ -18,7 +19,12 @@ function init() {
 
   d3.json('./data/rileTimeline.json', function (data) {
 
-    chart1.init('rile-timeline', data, colors);
+    chart1.init({id: 'rile-timeline', data: data, colors: colors });
+  });
+
+  d3.json('./data/domainComparison.json', function (data) {
+
+    chart2.init({id: 'domain-comparison', data: data, colors: colors });
   });
 
   navigation.init();
