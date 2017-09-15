@@ -5,8 +5,6 @@ function init() {
 
   var timeout;
 
-  var chart1 = new RileTimeline();
-  var chart2 = new DomainComparison();
 
   var colors = {
     'AfD': '#129ee6',
@@ -17,14 +15,46 @@ function init() {
     'Die Linke': '#be3075'
   };
 
+  var timeline = new RileTimeline();
+
   d3.json('./data/rileTimeline.json', function (data) {
 
-    chart1.init({id: 'rile-timeline', data: data, colors: colors });
+    timeline.init({id: 'rile-timeline', data: data, colors: colors });
   });
+
+  var comparison = new DomainComparison();
 
   d3.json('./data/domainComparison.json', function (data) {
 
-    chart2.init({id: 'domain-comparison', data: data, colors: colors });
+    comparison.init({id: 'domain-comparison', data: data, colors: colors });
+  });
+
+  var welfare = new RileBoxPlot();
+
+  d3.json('./data/rileBoxPlot.json', function (data) {
+
+    welfare.init({id: 'rile-welfare', data: data['Welfare and Quality of Life'], colors: colors });
+  });
+
+  var economy = new RileBoxPlot();
+
+  d3.json('./data/rileBoxPlot.json', function (data) {
+
+    economy.init({id: 'rile-economy', data: data['Economy'], colors: colors });
+  });
+
+  var external = new RileBoxPlot();
+
+  d3.json('./data/rileBoxPlot.json', function (data) {
+
+    external.init({id: 'rile-external', data: data['External Relations'], colors: colors });
+  });
+
+  var society = new RileBoxPlot();
+
+  d3.json('./data/rileBoxPlot.json', function (data) {
+
+    society.init({id: 'rile-society', data: data['Fabric of Society'], colors: colors });
   });
 
   navigation.init();
