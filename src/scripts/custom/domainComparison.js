@@ -21,7 +21,7 @@ var DomainComparison = function () {
     var keys = Object.keys(data[0].values);
 
     var x = d3.scaleBand()
-        .padding(0.1)
+        .padding(0.5)
         .domain(keys)
         .rangeRound([0, width]);
 
@@ -74,10 +74,10 @@ var DomainComparison = function () {
         .attr('fill-opacity', function (d) { return colors[d.key]; });
 
     container.append('p')
+        .classed('caption', true)
         .text(function (d) { return d.domain; });
 
     plot.append('g')
-        .attr('class', 'axis')
         .call(yAxis);
   }
 

@@ -20,19 +20,62 @@ var RileBoxPlot = function () {
     var width = parseInt(container.style('width')) - margin.left - margin.right;
     var height = 150 - margin.top - margin.bottom;
 
+    var max = d3.max(data, function (d) { return d.value + d.right; });
+    var min = d3.min(data, function (d) { return d.value - d.left; });
+    var midpoint = min - ((min - max) / 2);
+
     var x = d3.scaleLinear()
-      .domain([-1, 1])
+      .domain([midpoint - 0.5, midpoint + 0.5])
       .range([margin.left, width - margin.right]);
 
     var svg = container.append('svg')
       .attr('width', width + margin.left + margin.right)
       .attr('height', height + margin.top + margin.bottom);
 
+    svg.append('defs')
+      .append('marker')
+        .attr('id', 'arrow-right')
+        .attr('viewBox', '0 -5 10 10')
+        .attr('refX', 5)
+        .attr('refY', 0)
+        .attr('markerWidth', 10)
+        .attr('markerHeight', 10)
+        .attr('orient', 0)
+      .append('path')
+        .attr('d', 'M0,-5L10,0L0,5');
+
+    svg.append('defs')
+      .append('marker')
+        .attr('id', 'arrow-left')
+        .attr('viewBox', '0 -5 10 10')
+        .attr('refX', 5)
+        .attr('refY', 0)
+        .attr('markerWidth', 10)
+        .attr('markerHeight', 10)
+        .attr('orient', 180)
+      .append('path')
+        .attr('d', 'M0,-5L10,0L0,5');
+
     // Draw the axis
-    svg.append('g')
+    var axis = svg.append('g')
         .attr('transform', 'translate(0,' + 130 + ')')
         .attr('class', 'axis')
-        .call(d3.axisBottom(x));
+        .call(d3.axisBottom(x).ticks(0).tickSize(0));
+
+    axis.select('path').attr('marker-end', 'url(#arrow-right)');
+    axis.select('path').attr('marker-start', 'url(#arrow-left)');
+
+    svg.append('text')
+      .attr('transform',
+            'translate(' + (margin.left + 10) + ' ,' + (height + margin.top + 20) + ')')
+      .style('text-anchor', 'start')
+      .text('eher links');
+
+    svg.append('text')
+      .attr('transform',
+            'translate(' + (width - margin.right - 10) + ' ,' + (height + margin.top + 20) + ')')
+      .style('text-anchor', 'end')
+      .text('eher rechts');
 
     var group = svg.append('g');
 
