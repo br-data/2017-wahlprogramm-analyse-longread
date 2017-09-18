@@ -219,29 +219,6 @@ button,
 .download {
   margin-bottom: 2.5em; }
 
-.quote {
-  width: 45%;
-  font-weight: 600;
-  position: relative;
-  padding: 0 2em;
-  display: inline-block; }
-  .quote p:first-child {
-    text-indent: 2em; }
-  .quote:before {
-    display: block;
-    content: '\201C';
-    font-size: 5em;
-    position: absolute;
-    left: 25px;
-    top: 0;
-    line-height: 1em; }
-  @media (max-width: 840px) {
-    .quote {
-      margin-left: 10%;
-      margin-right: 10%;
-      width: initial;
-      text-align: center; } }
-
 .caption {
   margin-top: .2em;
   color: #889; }
@@ -259,36 +236,6 @@ button,
   section > .caption {
     margin-left: 20px;
     margin-right: 20px; } }
-
-.marginal {
-  max-width: 20%;
-  font-size: .8em;
-  color: #889;
-  padding: 0 2em;
-  position: relative; }
-  .marginal p {
-    margin: 0; }
-  @media (max-width: 840px) {
-    .marginal {
-      float: none;
-      max-width: 100%;
-      padding: 0;
-      margin: -1em 10% 0;
-      text-align: left; }
-      .marginal p {
-        display: inline; }
-        .marginal p:first-child {
-          margin-right: .3em; }
-      .marginal:before {
-        content: '';
-        position: absolute;
-        top: -3px;
-        left: 0;
-        width: 100px;
-        border-top: 1px solid #ccd; } }
-  @media (max-width: 560px) {
-    .marginal {
-      margin: -1.5em 20px 0; } }
 
 .infobox {
   background: #f0f0f4;
@@ -489,28 +436,6 @@ header {
     box-shadow: none; }
     .navigation.hidden .title {
       opacity: 0; }
-
-.embed {
-  position: relative;
-  height: 0;
-  padding-bottom: 56.25%;
-  overflow: hidden;
-  max-width: 100%; }
-  .embed.ratio-16-9 {
-    padding-bottom: 56.25%; }
-  .embed.ratio-4-3 {
-    padding-bottom: 75%; }
-  .embed.ratio-3-2 {
-    padding-bottom: 66.67%; }
-  .embed.ratio-1-1 {
-    padding-bottom: 100%; }
-  .embed iframe, .embed .content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 0; }
 
 footer {
   padding: 1em 0 2em;
