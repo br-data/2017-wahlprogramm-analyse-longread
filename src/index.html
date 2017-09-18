@@ -83,7 +83,7 @@
 
         <h1 style="text-align:center;font-size:2.1em;margin-top:4em;margin-bottom:1.5em;line-height:1.4;">Links. Rechts. Oder.</h1>
 
-        <h1 style="text-align:center;font-size:2.1em;margin-top:4em;margin-bottom:1.5em;line-height:1.4;">Ein Experiment mit Machine Learning 🇩🇪</h1>
+        <h1 style="text-align:center;font-size:2.1em;margin-top:4em;margin-bottom:1.5em;line-height:1.4;">Analyse der Wahlprogramme zur Bundestagswahl 2017. Ein Experiment mit Machine Learning 🇩🇪</h1>
 <!--
         <p><strong>Wie nahe sind sich Union und SPD und wie weit rechts steht die AfD? Wir haben die Wahlprogramme einer maschinellen Analyse unterzogen. Das Ergebnis: Nur eine Partei hat eine durchweg klare Linie. Bei den anderen liegen die Unterschiede im Detail.</strong></p> -->
 
@@ -98,10 +98,10 @@
         <h2>Unsere wichtigsten Erkenntnisse</h2>
 
         <ul>
-          <li>Fast alle Parteien sind nach links gerückt, auch <span class="cducsu-underline">CDU/CSU</span> und <span class="spd-underline">SPD</span>.</li>
           <li><span class="cducsu-underline">Union</span>, <span class="gruene-underline">Grüne</span> und <span class="fdp-underline">FDP</span> haben sich stark angenähert – die Basis für eine Jamaika-Koalition?</li>
+          <li>Fast alle Parteien sind nach links gerückt, auch <span class="cducsu-underline">CDU/CSU</span> und <span class="spd-underline">SPD</span>.</li>
           <li><span class="linke-underline">Die Linke</span> ist die Partei, die am ehesten eine klare ideologische Linie verfolgt.</li>
-          <li>Die <span class="afd-underline">AfD</span> ist durch den Algorithmus schwer zu fassen, da dieser das übergeordnete, rechtspopulistische Framing in den einzelnen Aussagen nicht immer wiedererkennt.</li>
+          <li>Die <span class="afd-underline">AfD</span> ist durch den Algorithmus schwer zu fassen – ein bekanntes Phänomen bei populistischen Parteien.</li>
         </ul>
 
 <!--         <ul>
@@ -113,9 +113,7 @@
 
         <h2>Die Ergebnisse im Detail</h2>
 
-        <p>Seit 1979 arbeiten Politikwissenschaftler für das <a href="https://manifestoproject.wzb.eu/" target='blank'>Manifesto Project</a> auf der ganzen Welt zusammen, um Wahlprogramme vergleichbar zu machen. Sie kategorisieren jede Aussage nach einem festgelegten Schema, das auch eine Einteilung in ideologisch rechts oder links beinhaltet. Unser Algorithmus hat die Programme zur Bundestagswahl 2017 nach den gleichen Vorgaben klassifiziert – also automatisiert die Arbeit übernommen, die beim Manifesto Project von Wissenschaftlern später noch per Hand erledigt werden wird. </p>
-
-        <p>Eines der auffälligsten Ergebnisse, die der Algorithmus ausgegeben hat: Die Sozialdemokratisierung der <span class="circle cducsu"></span>Union ist auch im Wahlprogramm sichtbar. Eine Annäherung mit der <span class="circle spd"></span>SPD hat allerdings kaum stattgefunden, da <span class="circle cducsu"></span>Union und <span class="circle spd"></span>SPD gleichermaßen nach links gerückt sind. Auffällig ist die Nähe von <span class="circle cducsu"></span>CDU/CSU, <span class="circle gruene"></span>Grünen und <span class="circle fdp"></span>FDP. Eine gute Ausgangsbasis für eine mögliche Jamaika-Kolaition? Zumindest die Ergebnisse unseres Algorithmus legen dies nahe. <span class="circle linke"></span>Die Linke steht wie zu erwarten am linken Rand, die mittige Position der <span class="circle afd"></span>AfD wird im Folgenden noch genauer analysiert. </p>
+        <p>Seit 1979 arbeiten Politikwissenschaftler auf der ganzen Welt zusammen, um Wahlprogramme vergleichbar zu machen. Im <a href="https://manifestoproject.wzb.eu/" target='blank'>Manifesto Project</a> kategorisieren sie jede Aussage nach einem festgelegten Schema, das auch eine Einteilung in ideologisch "links" oder "rechts" beinhaltet. Fordert eine Partei beispielsweise mehr internationale Zusammenarbeit, wird das als "links" eingeordnet, der Wunsch nach mehr Sicherheit als "rechts". Unser Algorithmus hat die Programme zur Bundestagswahl 2017 nach den gleichen Vorgaben klassifiziert – also automatisiert die Arbeit übernommen, die beim Manifesto Project von Wissenschaftlern später noch per Hand erledigt werden wird. </p>
       </div>
 
       <div class="block">
@@ -123,20 +121,26 @@
         <h2>Entwicklung der Parteien seit 2002</h2>
 
         <div id="rile-timeline" class="chart"></div>
-        <p class="caption">Links-Rechts-Einteilung der Parteien aufgrund aller in den Wahlprogrammen getroffenen Aussagen, Quelle: <a href="https://manifestoproject.wzb.eu/" target='blank'>MARPOR</a> (2002-2013), eigene Berechnung (2017).</p>
+        <p class="caption">Links-Rechts-Einteilung der Parteien aufgrund aller in den Wahlprogrammen getroffenen Aussagen, Quelle: <a href="https://manifestoproject.wzb.eu/" target='blank'>Manifesto Project</a> (2002-2013), eigene Berechnung (2017).</p>
+      </div>
+
+      <div class="block">
+
+        <p>Eines der auffälligsten Ergebnisse, die der Algorithmus ausgegeben hat: Die Sozialdemokratisierung der <span class="circle cducsu"></span>Union, die der Partei unter Angela Merkel nachgesagt wird, ist auch im Wahlprogramm sichtbar. Dennoch hat sie sich der <span class="circle spd"></span>SPD kaum angenähert, da beide Parteien gleichermaßen nach links gerückt sind. Auffällig ist die Nähe von <span class="circle cducsu"></span>CDU/CSU, <span class="circle gruene"></span>Grünen und <span class="circle fdp"></span>FDP. Eine gute Ausgangsbasis für eine mögliche Jamaika-Koalition? Zumindest die Ergebnisse unseres Algorithmus legen dies nahe. <span class="circle linke"></span>Die Linke steht wie zu erwarten am linken Rand, die mittige Position der <span class="circle afd"></span>AfD wird im Folgenden noch genauer analysiert. </p>
       </div>
 
       <div class="block">
 
 <!--    <p>Insbesondere an der Position der <span class="circle afd"></span>AfD wird deutlich, dass eine einfache Verortung der Parteien auf der Links-Rechts-Skala der Komplexität politischer Realität nicht immer gerecht wird. In einigen wissenschaftlichen Modellen wird die Skala deshalb um eine Dimension erweitert, beispielsweise um Parteien zusätzlich entlang der Achse <a href="https://www.politicalcompass.org/germany2017" target='blank'>„autoritär und libertär“</a> oder <a href="http://regierungsforschung.de/wp-content/uploads/2017/09/05092017_regierungsforschung.de_Switek_Krouwel_Thomeczek_Vermessung-der-Parteienlandschaft-vor-der-Bun-destagswahl-2017-mit-dem-Bundeswahlkompass-1.pdf" target=blank>„progressiv und konservativ“</a> einzuordnen. </p> -->
 
-        <p>Um ein differenzierteres Bild zu bekommen, haben wir die Wahlprogramme im Folgenden getrennt nach den großen Politikfeldern analysiert. Die Ergebnisse zeigen, dass alle Parteien dem Themenkomplex <b>Wohlfahrt und Lebensqualität</b> am meisten Bedeutung beimessen. Hierzu zählen beispielsweise Aussagen zu Wohlfahrtsstaat, Umweltschutz, Gleichstellung oder Kulturförderung – ein sehr breites Themenspektrum also. Die anderen Politikfelder wie <b>Wirtschaft</b> oder <b>Außenbeziehungen</b> werden von den Parteien hingegen zum Teil unterschiedlich stark gewichtet. </p>
-
+        
         <h2>Die Themengewichtung der Parteien</h2>
 
         <div id="domain-comparison" class="chart"></div>
 
         <p class="caption">Aussagen pro Politikfeld, gewichtet nach Textlänge</p>
+
+        <p>Die Wissenschaftler ordnen alle Aussagen einem von sechs großen Politikfeldern zu. Unsere Analsye zeigt, dass alle Parteien dem Themenkomplex <b>Wohlfahrt und Lebensqualität</b> am meisten Bedeutung beimessen. Hierzu zählen beispielsweise Aussagen zu Wohlfahrtsstaat, Umweltschutz, Gleichstellung oder Kulturförderung – ein sehr breites Themenspektrum also. Auffällig ist der Fokus der FDP Wirtschaft, SDP zu Außenbeziehungen, CDU/CSU zu Gesellschaftsgefüge. </p>
 
         <p>Die sechs großen Politikfelder bestehen wiederum aus mehreren Unterthemen. Da sich erst an diesen konkrete Forderungen der Parteien ablesen lassen, haben wir für jede Partei die drei meist angesprochenen Unterthemen identifiziert. Hier zeigt sich wenig überraschend, dass die <span class="circle gruene"></span>Grünen viel Wert auf Umweltschutz legen, während <span class="circle spd"></span>SPD, <span class="circle linke"></span>Die Linke und <span class="circle afd"></span>AfD sehr häufig soziale Themen ansprechen. Bei der <span class="circle fdp"></span>FDP steht neben ihrem traditionellen Thema „ökonomische Freiheit“ die Bildungspolitik im Fokus. Fast ebenso deutlich setzt sich auch das Regierungsprogramm von <span class="circle cducsu"></span>CDU/CSU ab, das in vielen Passagen auf Fragen von Technologie und Infrastruktur eingeht – wozu auch Aussagen zur Digitalisierung gehören. </p>
 
