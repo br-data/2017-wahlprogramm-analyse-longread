@@ -23,6 +23,9 @@ module.exports = function (grunt) {
           'dist/scripts/main.min.js': [
             'src/scripts/modules/navigation.js',
             'src/scripts/modules/marginals.js',
+            'src/scripts/custom/rileTimeline.js',
+            'src/scripts/custom/domainComparison.js',
+            'src/scripts/custom/rileBoxPlot.js',
             'src/scripts/init.js'
           ]
         }
@@ -39,6 +42,7 @@ module.exports = function (grunt) {
         },
 
         src: [
+          'node_modules/d3/build/d3.min.js',
           'dist/scripts/main.min.js'
         ],
 
@@ -98,7 +102,7 @@ module.exports = function (grunt) {
           { expand: true, flatten: true, src: ['src/favicon.ico'], dest: 'dist/', filter: 'isFile' },
           { expand: true, cwd: 'src/fonts/', src: ['**/*'], dest: 'dist/fonts/' },
           { expand: true, cwd: 'src/images/', src: ['**/*'], dest: 'dist/images/' },
-          { expand: true, cwd: 'src/charts/', src: ['**/*'], dest: 'dist/charts/' }
+          { expand: true, cwd: 'src/data/', src: ['**/*'], dest: 'dist/data/' }
         ]
       }
     },
