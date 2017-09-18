@@ -54,7 +54,6 @@ var DomainComparison = function () {
         .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
 
     plot.append('g')
-        .attr('transform', 'translate(10,0)')
       .selectAll('rect')
         .data(function (d) {
           return Object.keys(d.values).map(function (key) {
@@ -74,7 +73,6 @@ var DomainComparison = function () {
         .attr('fill-opacity', function (d) { return colors[d.key]; });
 
     container.append('p')
-        .classed('caption', true)
         .text(function (d) { return d.domain; });
 
     plot.append('g')

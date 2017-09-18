@@ -58,24 +58,45 @@ var RileBoxPlot = function () {
 
     // Draw the axis
     var axis = svg.append('g')
-        .attr('transform', 'translate(0,' + 130 + ')')
-        .attr('class', 'axis')
-        .call(d3.axisBottom(x).ticks(0).tickSize(0));
+        .attr('transform', 'translate(' + margin.left + ',' + (height + margin.bottom) + ')');
 
-    axis.select('path').attr('marker-end', 'url(#arrow-right)');
-    axis.select('path').attr('marker-start', 'url(#arrow-left)');
+    axis.append('line')
+        .attr('x1', 0)
+        .attr('x2', 100)
+        .attr('y1', 0)
+        .attr('y2', 0)
+        .attr('stroke', '#000')
+        .attr('stroke-width', 1)
+        .attr('marker-start', 'url(#arrow-left)');
 
-    svg.append('text')
-      .attr('transform',
-            'translate(' + (margin.left + 10) + ' ,' + (height + margin.top + 20) + ')')
-      .style('text-anchor', 'start')
-      .text('eher links');
+    axis.append('text')
+        .attr('x', 20)
+        .attr('y', 20)
+        .attr('text-anchor', 'start')
+        .text('eher links');
 
-    svg.append('text')
-      .attr('transform',
-            'translate(' + (width - margin.right - 10) + ' ,' + (height + margin.top + 20) + ')')
-      .style('text-anchor', 'end')
-      .text('eher rechts');
+    axis.append('line')
+        .attr('x1', width - 100 - margin.left)
+        .attr('x2', width - margin.left)
+        .attr('y1', 0)
+        .attr('y2', 0)
+        .attr('stroke', '#000')
+        .attr('stroke-width', 1)
+        .attr('marker-end', 'url(#arrow-right)');
+
+    axis.append('text')
+        .attr('x', width - margin.left - 20)
+        .attr('y', 20)
+        .attr('text-anchor', 'end')
+        .text('eher rechts');
+
+    // var axis = svg.append('g')
+    //     .attr('transform', 'translate(0,' + 130 + ')')
+    //     .attr('class', 'axis')
+    //     .call(d3.axisBottom(x).ticks(0).tickSize(0));
+
+    // axis.select('path').attr('marker-end', 'url(#arrow-right)');
+    // axis.select('path').attr('marker-start', 'url(#arrow-left)');
 
     var group = svg.append('g');
 

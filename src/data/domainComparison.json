@@ -1,6 +1,6 @@
 [
   {
-    "domain": "Welfare and Quality of Life",
+    "domain": "Wohlfahrt und Lebensqualität",
     "values": {
       "CDU/CSU": 25.941258172702327,
       "SPD": 42.53449920618248,
@@ -11,7 +11,7 @@
     }
   },
   {
-    "domain": "Economy",
+    "domain": "Wirtschaft",
     "values": {
       "CDU/CSU": 19.731698228259763,
       "SPD": 12.086345305456161,
@@ -22,7 +22,7 @@
     }
   },
   {
-    "domain": "External Relations",
+    "domain": "Außenbeziehungen",
     "values": {
       "CDU/CSU": 19.243199295369084,
       "SPD": 29.699795777097414,
@@ -33,7 +33,7 @@
     }
   },
   {
-    "domain": "Freedom and Democracy",
+    "domain": "Freiheit und Demokratie",
     "values": {
       "CDU/CSU": 1.456011382499407,
       "SPD": 4.333107184306865,
@@ -44,7 +44,7 @@
     }
   },
   {
-    "domain": "Fabric of Society",
+    "domain": "Gesellschaftsgefüge",
     "values": {
       "CDU/CSU": 25.15803380873336,
       "SPD": 10.01174367787195,
@@ -55,7 +55,7 @@
     }
   },
   {
-    "domain": "Political System",
+    "domain": "Politisches System",
     "values": {
       "CDU/CSU": 8.469799112436057,
       "SPD": 1.3345088490851298,
