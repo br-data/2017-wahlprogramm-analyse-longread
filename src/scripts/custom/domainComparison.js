@@ -35,8 +35,13 @@ var DomainComparison = function () {
         .nice();
 
     var yAxis = d3.axisLeft(y)
-      .ticks(3).
-      tickFormat(function(d) { return d + ' %'; })
+      .ticks(3)
+      .tickFormat(function(d) { return d + ' %'; })
+      .tickSize(0);
+
+    var xAxis = d3.axisBottom(x)
+      .ticks(0)
+      .tickFormat(function(d) { return ''; })
       .tickSize(0);
 
     var container = d3.select('#' + id)
@@ -77,6 +82,10 @@ var DomainComparison = function () {
 
     plot.append('g')
         .call(yAxis);
+
+    plot.append('g')
+        .attr('transform', 'translate(0,' + height +')')
+        .call(xAxis);
   }
 
   function resize() {

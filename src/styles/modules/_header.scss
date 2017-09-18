@@ -4,21 +4,18 @@ header {
   background: -webkit-radial-gradient(center, ellipse cover,  #3d4556 0%,#2a2e3a 100%);
   background: radial-gradient(ellipse at center,  #3d4556 0%,#2a2e3a 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3d4556', endColorstr='#2a2e3a',GradientType=1 );
-  height: 50vh;
-  position: relative;
-
-  display: flex;
-  justify-content: center;
+  display: inline-block;
+  width: 100%;
 
   section {
-    align-self: flex-end;
-    z-index: 10;
     color: $white;
+    margin-top: 8em;
+    margin-bottom: 4em;
+  }
 
-      h1 {
-        font-size: 2em;
-        margin-bottom: 0;
-        line-height: 1.2em;
-      }
+  h1 {
+    font-size: 2em;
+    margin-bottom: 0;
+    line-height: 1.2em;
   }
 }

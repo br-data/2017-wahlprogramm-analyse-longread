@@ -15,10 +15,10 @@ var RileTimeline = function () {
 
     var container = d3.select('#' + id);
 
-    var margin = { top: 20, right: 20, bottom: 30, left: 40 };
+    var margin = { top: 20, right: 20, bottom: 50, left: 40 };
 
     var width = parseInt(container.style('width')) - margin.left - margin.right;
-    var height = 350 - margin.top - margin.bottom;
+    var height = 370 - margin.top - margin.bottom;
 
     var svg = container
       .append('svg')
@@ -42,10 +42,6 @@ var RileTimeline = function () {
       ));
 
     var line = d3.line()
-        .x(function(d) { return x(d.rile); })
-        .y(function(d) { return y(d.date); });
-
-    var dotted = d3.line()
         .x(function(d) { return x(d.rile); })
         .y(function(d) { return y(d.date); });
 
@@ -90,7 +86,7 @@ var RileTimeline = function () {
         .attr('stroke-width', 2.25)
         .attr('stroke-dasharray', ('5, 5'))
         .attr('fill', 'none')
-        .attr('d', dotted);
+        .attr('d', line);
 
     group.selectAll('circles')
         .data(function (d) { return d.values; })
@@ -102,6 +98,21 @@ var RileTimeline = function () {
         .attr('stroke', function (d) { return colors[d.party]; })
         .attr('stroke-width', '2')
         .attr('fill', '#fff');
+
+    var label = svg.append('g')
+      .attr('transform', 'translate(0,' + (height) + ')');
+
+    label.append('text')
+        .attr('x', 10)
+        .attr('y', 40)
+        .attr('text-anchor', 'start')
+        .text('eher links');
+
+    label.append('text')
+        .attr('x', width - margin.left)
+        .attr('y', 40)
+        .attr('text-anchor', 'middle')
+        .text('eher rechts');
   }
 
   function resize() {

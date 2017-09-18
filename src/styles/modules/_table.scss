@@ -5,16 +5,23 @@ table {
   line-height: 1.3;
 }
 
+td + td,
+th + th {
+  border-left: 1px solid;
+}
+
+tr + tr {
+  border-top: 1px solid;
+}
+
 td, th {
-  border: 1px solid $light-grey;
   text-align: left;
   padding: .25em .5em;
   vertical-align: top;
 }
 
 th {
-  background: $light-grey;
-  border: 1px solid #ddd;
+  border-bottom: 1px solid;
   font-weight: 600;
 }
 
@@ -34,29 +41,35 @@ th {
     display: none;
   }
 
+  td + td,
+  th + th {
+    border-left: none;
+  }
+
+  tr + tr {
+    border-top: none !important;
+  }
+
   tr {
-    border: 1px solid $light-grey;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
   }
 
   td {
-    border: none;
-    border-bottom: 1px solid $light-grey;;
+    border-bottom: 1px solid;
     position: relative;
-    padding-left: 50%;
+    padding-left: 33%;
 
     &:last-child {
       border-bottom: none;
     }
 
     &:first-child {
-      background: $light-grey;
       font-weight: 600;
     }
 
     &:before {
       position: absolute;
-      top: 0;
+      top: .25em;
       left: 7px;
       width: 50%;
       white-space: nowrap;
@@ -69,4 +82,3 @@ th {
     margin-right: 0;
   }
 }
-
