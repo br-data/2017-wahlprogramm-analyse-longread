@@ -33,6 +33,39 @@
   }
 }
 
+.box {
+  margin-bottom: -1px;
+  margin-right: 3px;
+  margin-left: 2px;
+  display: inline-block;
+  height: 15px;
+  width: 8px;
+
+  &.afd {
+    background-color: #129ee6;
+  }
+
+  &.cducsu {
+    background-color: #121212;
+  }
+
+  &.fdp {
+    background-color: #ffdd00;
+  }
+
+  &.spd {
+    background-color: #d71f1d;
+  }
+
+  &.gruene {
+    background-color: #0a8000;
+  }
+
+  &.linke {
+    background-color: #be3075;
+  }
+}
+
 &.afd {
   color: #129ee6;
 }

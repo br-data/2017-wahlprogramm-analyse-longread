@@ -51,6 +51,7 @@ var RileTimeline = function () {
 
     svg.append('g')
         .attr('transform', 'translate(0,' + height + ')')
+        .attr('class', 'bottom')
         .call(d3.axisBottom(x));
 
     svg.append('g')

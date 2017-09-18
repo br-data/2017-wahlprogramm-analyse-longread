@@ -3,6 +3,10 @@ body {
   font-size: 1.1em;
   font-weight: 300;
   line-height: 1.6;
+
+  @include mobile {
+    font-size: 1em;
+  }
 }
 
 h1, h2, h3, h4, h5 {
