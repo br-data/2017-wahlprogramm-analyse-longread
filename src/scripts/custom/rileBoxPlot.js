@@ -29,32 +29,32 @@ var RileBoxPlot = function () {
       .range([margin.left, width - margin.right]);
 
     var svg = container.append('svg')
-      .attr('width', width + margin.left + margin.right)
-      .attr('height', height + margin.top + margin.bottom);
+        .attr('width', width + margin.left + margin.right)
+        .attr('height', height + margin.top + margin.bottom);
 
     svg.append('defs')
       .append('marker')
         .attr('id', 'arrow-right')
-        .attr('viewBox', '0 -5 10 10')
-        .attr('refX', 5)
+        .attr('viewBox', '0 -4 8 8')
+        .attr('refX', 4)
         .attr('refY', 0)
-        .attr('markerWidth', 10)
-        .attr('markerHeight', 10)
+        .attr('markerWidth', 8)
+        .attr('markerHeight', 8)
         .attr('orient', 0)
       .append('path')
-        .attr('d', 'M0,-5L10,0L0,5');
+        .attr('d', 'M0,-4L8,0L0,4');
 
     svg.append('defs')
       .append('marker')
         .attr('id', 'arrow-left')
-        .attr('viewBox', '0 -5 10 10')
-        .attr('refX', 5)
+        .attr('viewBox', '0 -4 8 8')
+        .attr('refX', 4)
         .attr('refY', 0)
-        .attr('markerWidth', 10)
-        .attr('markerHeight', 10)
+        .attr('markerWidth', 8)
+        .attr('markerHeight', 8)
         .attr('orient', 180)
       .append('path')
-        .attr('d', 'M0,-5L10,0L0,5');
+        .attr('d', 'M0,-4L8,0L0,4');
 
     // Draw the axis
     var axis = svg.append('g')
@@ -118,6 +118,7 @@ var RileBoxPlot = function () {
         .attr('stroke-width', 2);
   }
 
+  // Let's hope Mike Bostock never sees this
   function resize() {
 
     d3.select('#' + id + ' svg').remove();

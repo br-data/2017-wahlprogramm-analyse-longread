@@ -22,7 +22,6 @@ module.exports = function (grunt) {
 
           'dist/scripts/main.min.js': [
             'src/scripts/modules/navigation.js',
-            'src/scripts/modules/marginals.js',
             'src/scripts/custom/rileTimeline.js',
             'src/scripts/custom/domainComparison.js',
             'src/scripts/custom/rileBoxPlot.js',

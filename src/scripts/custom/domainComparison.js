@@ -53,6 +53,7 @@ var DomainComparison = function () {
 
     var plot = container
       .append('svg')
+        .attr('id', 'chart-' + id)
         .attr('width', width + margin.left + margin.right)
         .attr('height', height + margin.top + margin.bottom)
       .append('g')

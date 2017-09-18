@@ -521,7 +521,8 @@ footer {
   display: inline-block;
   min-width: 150px;
   width: 33%;
-  padding-right: 1em; }
+  padding-right: 1em;
+  text-align: center; }
   @media (max-width: 840px) {
     .chart .small {
       width: 50%; } }
