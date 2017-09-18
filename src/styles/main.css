@@ -579,22 +579,22 @@ footer {
   .box.linke {
     background-color: #be3075; }
 
-.afd {
+strong.afd {
   color: #129ee6; }
 
-.cducsu {
+strong.cducsu {
   color: #121212; }
 
-.fdp {
-  color: #f1d100; }
+strong.fdp {
+  color: #ffdd00; }
 
-.spd {
+strong.spd {
   color: #d71f1d; }
 
-.gruene {
+strong.gruene {
   color: #0a8000; }
 
-.linke {
+strong.linke {
   color: #be3075; }
 
 /*# sourceMappingURL=main.css.map */
