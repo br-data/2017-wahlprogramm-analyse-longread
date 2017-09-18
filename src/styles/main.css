@@ -391,6 +391,8 @@ th {
   font-size: 1.3em;
   cursor: pointer;
   color: #889; }
+  .sharing i {
+    transition: color .2s ease; }
   .sharing .icon-facebook:hover {
     color: #3b5998; }
   .sharing .icon-twitter:hover {
@@ -417,10 +419,7 @@ header {
     header section h1 {
       font-size: 2em;
       margin-bottom: 0;
-      line-height: 1.2em;
-      text-shadow: 0 0 3px rgba(0, 0, 0, 0.4); }
-    header section p {
-      text-shadow: 0 0 10px rgba(0, 0, 0, 0.8); }
+      line-height: 1.2em; }
 
 .navigation {
   padding: 10px 20px;
