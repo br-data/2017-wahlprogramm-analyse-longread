@@ -15,10 +15,10 @@ var RileBoxPlot = function () {
 
     var container = d3.select('#' + id);
 
-    var margin = { top: 15, right: 20, bottom: 20, left: 10 };
+    var margin = { top: 5, right: 20, bottom: 10, left: 10 };
 
     var width = parseInt(container.style('width')) - margin.left - margin.right;
-    var height = 150 - margin.top - margin.bottom;
+    var height = 160 - margin.top - margin.bottom;
 
     var max = d3.max(data, function (d) { return d.value + d.right; });
     var min = d3.min(data, function (d) { return d.value - d.left; });
@@ -58,7 +58,7 @@ var RileBoxPlot = function () {
 
     // Draw the axis
     var axis = svg.append('g')
-        .attr('transform', 'translate(' + margin.left + ',' + (height + margin.bottom) + ')');
+        .attr('transform', 'translate(' + margin.left + ',' + (height - margin.bottom) + ')');
 
     axis.append('line')
         .attr('x1', 0)
@@ -90,15 +90,8 @@ var RileBoxPlot = function () {
         .attr('text-anchor', 'end')
         .text('eher rechts');
 
-    // var axis = svg.append('g')
-    //     .attr('transform', 'translate(0,' + 130 + ')')
-    //     .attr('class', 'axis')
-    //     .call(d3.axisBottom(x).ticks(0).tickSize(0));
-
-    // axis.select('path').attr('marker-end', 'url(#arrow-right)');
-    // axis.select('path').attr('marker-start', 'url(#arrow-left)');
-
-    var group = svg.append('g');
+    var group = svg.append('g')
+        .attr('transform', 'translate(0,' + margin.top + ')');
 
     // Draw the deviation lines
     group.selectAll('line')
