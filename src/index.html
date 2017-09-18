@@ -81,11 +81,13 @@
 
       <section>
 
+        <img class="lines" src="images/lines.svg">
+
         <div class="block">
 
           <h1>Der Computer sagt: Jamaika</h1>
 
-          <p>Was passiert, wenn man Machine Learning auf die Wahlprogramme loslässt? Wir haben es ausprobiert - und zum Teil überraschende Ergebnisse erhalten.</p>
+          <p>Was passiert, wenn man Machine Learning auf die Wahlprogramme loslässt? Wir haben es ausprobiert – und auch überraschende Ergebnisse erhalten.</p>
 
           <p class="author">– von Steffen Kühne, Oliver Schnuck, Robert Schöffel (BR Data) </p>
         </div>
@@ -110,22 +112,13 @@
         <h2>Wie wir vorgegangen sind</h2>
 
         <p>Seit 1979 arbeiten Politikwissenschaftler auf der ganzen Welt zusammen, um Wahlprogramme vergleichbar zu machen. Im <a href="https://manifestoproject.wzb.eu/" target='blank'>Manifesto Project</a> kategorisieren sie jede Aussage nach einem festgelegten Schema, das auch eine Einteilung in ideologisch "links" oder "rechts" beinhaltet. Fordert eine Partei beispielsweise mehr internationale Zusammenarbeit, wird das als "links" eingeordnet, der Wunsch nach mehr Sicherheit als "rechts". Unser Algorithmus hat die Programme zur Bundestagswahl 2017 nach den gleichen Vorgaben klassifiziert – also automatisiert die Arbeit übernommen, die Wissenschaftler beim Manifesto Project noch per Hand erledigen werden. </p>
-      </div>
-
-      <div class="block">
 
         <h2>Entwicklung der Parteien seit 2002</h2>
 
         <div id="rile-timeline" class="chart"></div>
         <p class="caption">Links-Rechts-Einteilung der Parteien aufgrund aller in den Wahlprogrammen getroffenen Aussagen, Quelle: <a href="https://manifestoproject.wzb.eu/" target='blank'>Manifesto Project</a> (2002-2013), eigene Berechnung (2017).</p>
-      </div>
 
-      <div class="block">
-
-        <p>Eines der auffälligsten Ergebnisse, die der Algorithmus ausgegeben hat: Die Sozialdemokratisierung der <span class="circle cducsu"></span><strong class="cducsu">Union</strong>, die der Partei unter Angela Merkel nachgesagt wird, ist auch im Wahlprogramm sichtbar. Dennoch hat sie sich der <span class="circle spd"></span><strong class="spd">SPD</strong> kaum angenähert, da beide Parteien gleichermaßen nach links gerückt sind. Auffällig ist die Nähe von <span class="circle cducsu"></span><strong class="cducsu">CDU/CSU</strong>, <span class="circle gruene"></span><strong class="gruene">Grünen</strong> und <span class="circle fdp"></span><strong class="fdp">FDP</strong>. Eine gute Ausgangsbasis für eine mögliche Jamaika-Koalition? Zumindest die Ergebnisse unseres Algorithmus legen dies nahe. <span class="circle linke"></span><strong class="linke">Die Linke</strong> steht wie zu erwarten am linken Rand, die mittige Position der <span class="circle afd"></span><strong class="afd">AfD</strong> wird im Folgenden noch genauer analysiert. </p>
-      </div>
-
-      <div class="block">
+        <p>Eines der auffälligsten Ergebnisse, die der Algorithmus ausgegeben hat: Die Sozialdemokratisierung der <strong class="cducsu">Union</strong>, die der Partei unter Angela Merkel nachgesagt wird, ist auch im Wahlprogramm sichtbar. Dennoch hat sie sich der <strong class="spd">SPD</strong> kaum angenähert, da beide Parteien gleichermaßen nach links gerückt sind. Auffällig ist die Nähe von <strong class="cducsu">CDU/CSU</strong>, <strong class="gruene">Grünen</strong> und <strong class="fdp">FDP</strong>. Eine gute Ausgangsbasis für eine mögliche Jamaika-Koalition? Zumindest die Ergebnisse unseres Algorithmus legen dies nahe. <strong class="linke">Die Linke</strong> steht wie zu erwarten am linken Rand, die mittige Position der <strong class="afd">AfD</strong> wird im Folgenden noch genauer analysiert. </p>
 
         <h2>Die Themengewichtung der Parteien</h2>
 
@@ -133,9 +126,9 @@
 
         <p class="caption">Aussagen pro Politikfeld, gewichtet nach Textlänge</p>
 
-        <p>Die Wissenschaftler ordnen alle Aussagen in den Wahlprogrammen einem von sechs großen Politikfeldern zu. Unser Algorithmus erledigt dies automatisiert. Das Ergebnis: Alle Parteien messen dem Politikfeld <strong>Wohlfahrt und Lebensqualität</strong> am meisten Bedeutung bei. Hierzu zählen beispielsweise Aussagen zu Wohlfahrtsstaat, Umweltschutz, Gleichstellung oder Kulturförderung – ein sehr breites Themenspektrum also. Auffällig ist zudem: Die <span class="box fdp"></span><strong class="fdp">FDP</strong> legt überdurchschnittlich viel Wert auf Aussagen zu <strong>Wirtschaft</strong>, die <span class="box spd"></span><strong class="spd">SPD</strong> zu <strong>Außenbeziehungen</strong>, die <span class="box cducsu"></span><strong class="cducsu">CDU/CSU</strong> zu <strong>Gesellschaftsgefüge</strong>. </p>
+        <p>Die Wissenschaftler ordnen alle Aussagen in den Wahlprogrammen einem von sechs großen Politikfeldern zu. Unser Algorithmus erledigt dies automatisiert. Das Ergebnis: Alle Parteien messen dem Politikfeld Wohlfahrt und Lebensqualität am meisten Bedeutung bei. Hierzu zählen beispielsweise Aussagen zu Wohlfahrtsstaat, Umweltschutz, Gleichstellung oder Kulturförderung – ein sehr breites Themenspektrum also. Auffällig ist zudem: Die <strong class="fdp">FDP</strong> legt überdurchschnittlich viel Wert auf Aussagen zu Wirtschaft, die <strong class="spd">SPD</strong> zu Außenbeziehungen, die <strong class="cducsu">CDU/CSU</strong> zu Gesellschaftsgefüge. </p>
 
-        <p>Die sechs großen Politikfelder bestehen wiederum aus mehreren Unterthemen. Da sich erst an diesen konkrete Forderungen der Parteien ablesen lassen, haben wir für jede Partei die drei meist angesprochenen Themen identifiziert. Hier zeigt sich wenig überraschend, dass die <span class="box gruene"></span><strong class="gruene">Grünen</strong> viel Wert auf Umweltschutz legen, während <span class="box spd"></span><strong class="spd">SPD</strong>, <span class="box linke"></span><strong class="linke">Die Linke</strong> und <span class="box afd"></span><strong class="afd">AfD</strong> sehr häufig soziale Themen ansprechen. Bei der <span class="box fdp"></span><strong class="fdp">FDP</strong> stehen neben ihrem traditionellen Thema Freiheit und Bürgerrechte die Investitionen in Bildung im Fokus. Fast ebenso deutlich setzt sich auch das Regierungsprogramm von <span class="box cducsu"></span><strong class="cducsu">CDU/CSU</strong> ab, das in vielen Passagen auf Fragen von Infrastruktur und Technologie eingeht – wozu auch Aussagen zur Digitalisierung gehören. </p>
+        <p>Die sechs großen Politikfelder bestehen wiederum aus mehreren Unterthemen. Da sich erst an diesen konkrete Forderungen der Parteien ablesen lassen, haben wir für jede Partei die drei meist angesprochenen Themen identifiziert. Hier zeigt sich wenig überraschend, dass die <strong class="gruene">Grünen</strong> viel Wert auf Umweltschutz legen, während <strong class="spd">SPD</strong>, <strong class="linke">Die Linke</strong> und <strong class="afd">AfD</strong> sehr häufig soziale Themen ansprechen. Bei der <strong class="fdp">FDP</strong> stehen neben ihrem traditionellen Thema Freiheit und Bürgerrechte die Investitionen in Bildung im Fokus. Fast ebenso deutlich setzt sich auch das Regierungsprogramm von <strong class="cducsu">CDU/CSU</strong> ab, das in vielen Passagen auf Fragen von Infrastruktur und Technologie eingeht – wozu auch Aussagen zur Digitalisierung gehören. </p>
 
         <p class="small-margin"><strong>Die drei meist angesprochenen Themen jeder Partei</strong></p>
 
@@ -178,9 +171,6 @@
             </tr>
           </tbody>
         </table>
-      </div>
-
-      <div class="block">
 
         <h2>Links oder rechts? Es kommt darauf an</h2>
 
@@ -188,56 +178,36 @@
 
         <h2>Wohlfahrt und Lebensqualität</h2>
 
-        <div id="rile-welfare" class="chart"></div> 
+        <div id="rile-welfare" class="chart"></div>
 
         <p class="caption">Verteilung der Aussagen und Median für jede Partei</p>
 
-        <p>Alle Parteien wollen die Rente stärken und Bildung und Kultur fördern. Im Politikfeld <strong>Wohlfahrt und Lebensqualität</strong> liegen die Positionen deshalb nahe beisammen. Ganz rechts stehen die <span class="circle gruene"></span><strong class="gruene">Grünen</strong> und die <span class="circle afd"></span><strong class="afd">AfD</strong>: Letztere fordert eine deutsche Leitkultur, eine Begrenzung der Zuwanderung und eine Aufhebung des Klimaschutzplans. Nur weil diese Aussagen im Programm wenig Raum einnehmen, steht die <span class="circle afd"></span><strong class="afd">AfD</strong> hier nicht noch weiter rechts. </p>
+        <p>Alle Parteien wollen die Rente stärken und Bildung und Kultur fördern. Im Politikfeld Wohlfahrt und Lebensqualität liegen die Positionen deshalb nahe beisammen. Ganz rechts stehen die <strong class="gruene">Grünen</strong> und die <strong class="afd">AfD</strong>: Letztere fordert eine deutsche Leitkultur, eine Begrenzung der Zuwanderung und eine Aufhebung des Klimaschutzplans. Nur weil diese Aussagen im Programm wenig Raum einnehmen, steht die <strong class="afd">AfD</strong> hier nicht noch weiter rechts. </p>
 
-        <p>Dass die <span class="circle gruene"></span><strong class="gruene">Grünen</strong> sich im Vergleich zu anderen Parteien ebenfalls eher rechts bewegen, lässt sich etwa auf die Forderungen nach einer kinder- und familienfreundlichen Politik zurückführen. Positionen, die die Politikwissenschaft eher einer konservativen Politiklinie zuordnet. Allerdings legen die <span class="circle gruene"></span><strong class="gruene">Grünen</strong> dabei einen offenen Familienbegriff zugrunde, was unser Algorithmus nicht gewertet hat. <span class="circle linke"></span><strong class="linke">Die Linke</strong> spricht sich deutlicher als andere Parteien für mehr Investitionen in Bildung und soziale Sicherungssysteme aus, womit sie sich ein Stück weiter links positioniert. </p>
-      </div>
-
-      <div class="block">
+        <p>Dass die <strong class="gruene">Grünen</strong> sich im Vergleich zu anderen Parteien ebenfalls eher rechts bewegen, lässt sich etwa auf die Forderungen nach einer kinder- und familienfreundlichen Politik zurückführen. Positionen, die die Politikwissenschaft eher einer konservativen Politiklinie zuordnet. Allerdings legen die <strong class="gruene">Grünen</strong> dabei einen offenen Familienbegriff zugrunde, was unser Algorithmus nicht gewertet hat. <strong class="linke">Die Linke</strong> spricht sich deutlicher als andere Parteien für mehr Investitionen in Bildung und soziale Sicherungssysteme aus, womit sie sich ein Stück weiter links positioniert. </p>
 
         <h2>Wirtschaft</h2>
 
         <div id="rile-economy" class="chart"></div>
 
-        <p>Auch im Politikfeld <strong>Wirtschaft</strong> liegen die Positionen der Parteien eng zusammen. So fordern sowohl <span class="circle cducsu"></span><strong class="cducsu">Union</strong> als auch <span class="circle fdp"></span><strong class="fdp">FDP</strong> und <span class="circle afd"></span><strong class="afd">AfD</strong> einen ausgeglichenen Staatshaushalt. Die <span class="circle spd"></span><strong class="spd">SPD</strong> setzt sich für den Industriestandort Deutschland sowie den Mittelstand ein – alles konservative wirtschaftspolitische Forderungen, weshalb die angesprochenen Parteien fast auf einer Linie liegen. Lediglich <span class="circle linke"></span><strong class="linke">Die Linke</strong> setzt sich deutlich ab – abermals nach links. Die Partei trifft klassisch linke Aussagen zur Regulierung der Finanzmärkte oder einem Privatisierungsstopp. Konservative Aussagen, etwa zu ausgeglichenen Staatsfinanzen oder einer Stärkung des Standortes Deutschland, finden sich in ihrem Programm nicht. </p>
-      </div>
-
-      <div class="block">
+        <p>Auch im Politikfeld Wirtschaft liegen die Positionen der Parteien eng zusammen. So fordern sowohl <strong class="cducsu">Union</strong> als auch <strong class="fdp">FDP</strong> und <strong class="afd">AfD</strong> einen ausgeglichenen Staatshaushalt. Die <strong class="spd">SPD</strong> setzt sich für den Industriestandort Deutschland sowie den Mittelstand ein – alles konservative wirtschaftspolitische Forderungen, weshalb die angesprochenen Parteien fast auf einer Linie liegen. Lediglich <strong class="linke">Die Linke</strong> setzt sich deutlich ab – abermals nach links. Die Partei trifft klassisch linke Aussagen zur Regulierung der Finanzmärkte oder einem Privatisierungsstopp. Konservative Aussagen, etwa zu ausgeglichenen Staatsfinanzen oder einer Stärkung des Standortes Deutschland, finden sich in ihrem Programm nicht. </p>
 
         <h2>Außenbeziehungen</h2>
 
         <div id="rile-external" class="chart"></div>
 
-        <p>Im Politikfeld <strong>Außenbeziehungen</strong> treten die deutlichsten Unterschiede zwischen den Parteien hervor. So sprechen sich etwa <span class="circle linke"></span><strong class="linke">Die Linke</strong> und die <span class="circle gruene"></span><strong class="gruene">Grünen</strong> deutlich für Abrüstung und Friedenspolitik aus, womit sie sich links positionieren. Nicht ganz so viel Gewicht nehmen diese Themen bei der <span class="circle spd"></span><strong class="spd">SPD</strong> ein, auch wenn sich hier ebenfalls Forderungen nach einer Abrüstung finden. Gleichzeitig möchte die <span class="circle spd"></span><strong class="spd">SPD</strong> die Bundeswehr modernisieren, womit sie sich in der Mitte einordnet. <span class="circle cducsu"></span><strong class="cducsu">CDU/CSU</strong> und <span class="circle fdp"></span><strong class="fdp">FDP</strong> sprechen sich ebenfalls für mehr Investitionen in die Verteidigung aus, was zu einer Position weiter rechts führt. Rechts findet sich auch die <span class="circle afd"></span><strong class="afd">AfD</strong> wieder, die die Wehrpflicht wieder einführen und die Bundeswehr grundlegend reformieren möchte. </p>
-      </div>
-
-      <div class="block">
+        <p>Im Politikfeld Außenbeziehungen treten die deutlichsten Unterschiede zwischen den Parteien hervor. So sprechen sich etwa <strong class="linke">Die Linke</strong> und die <strong class="gruene">Grünen</strong> deutlich für Abrüstung und Friedenspolitik aus, womit sie sich links positionieren. Nicht ganz so viel Gewicht nehmen diese Themen bei der <strong class="spd">SPD</strong> ein, auch wenn sich hier ebenfalls Forderungen nach einer Abrüstung finden. Gleichzeitig möchte die <strong class="spd">SPD</strong> die Bundeswehr modernisieren, womit sie sich in der Mitte einordnet. <strong class="cducsu">CDU/CSU</strong> und <strong class="fdp">FDP</strong> sprechen sich ebenfalls für mehr Investitionen in die Verteidigung aus, was zu einer Position weiter rechts führt. Rechts findet sich auch die <strong class="afd">AfD</strong> wieder, die die Wehrpflicht wieder einführen und die Bundeswehr grundlegend reformieren möchte. </p>
 
         <h2>Gesellschaftsgefüge</h2>
 
         <div id="rile-society" class="chart"></div>
 
-        <p>Forderungen nach mehr Sicherheit und einer effektiven Bekämpfung der Kriminalität zählen die Wissenschaftler zum Politikfeld <strong>Gesellschaftsgefüge</strong>. Hier sind sich die Parteien scheinbar so nahe wie in keinem anderen Feld. Dass <span class="circle linke"></span><strong class="linke">Die Linke</strong> allerdings rechte Gewalt bekämpfen will und die <span class="circle afd"></span><strong class="afd">AfD</strong> explizit Ausländergewalt als Problem ansieht, kann unser Algorithmus nicht unterscheiden. Genauso ist es bei dem Wort "Integration", das die <span class="circle afd"></span><strong class="afd">AfD</strong> als einzige Partei in einem negativen Kontext einsetzt. Deshalb wird die <span class="circle afd"></span><strong class="afd">AfD</strong> in diesem Politikfeld fälschlicherweise als links eingeordnet. Dennoch ist auffällig: Sicherheit und der Kampf gegen Kriminalität spielen in allen Wahlprogrammen eine wichtige Rolle.</p>
-      </div>
-
-      <div class="block">
+        <p>Forderungen nach mehr Sicherheit und einer effektiven Bekämpfung der Kriminalität zählen die Wissenschaftler zum Politikfeld Gesellschaftsgefüge. Hier sind sich die Parteien scheinbar so nahe wie in keinem anderen Feld. Dass <strong class="linke">Die Linke</strong> allerdings rechte Gewalt bekämpfen will und die <strong class="afd">AfD</strong> explizit Ausländergewalt als Problem ansieht, kann unser Algorithmus nicht unterscheiden. Genauso ist es bei dem Wort "Integration", das die <strong class="afd">AfD</strong> als einzige Partei in einem negativen Kontext einsetzt. Deshalb wird die <strong class="afd">AfD</strong> in diesem Politikfeld fälschlicherweise als links eingeordnet. Dennoch ist auffällig: Sicherheit und der Kampf gegen Kriminalität spielen in allen Wahlprogrammen eine wichtige Rolle.</p>
 
         <h2>Die Grenzen des maschinellen Lernens</h2>
 
         <p>Parteiprogramme mit einem Machine-Learning-Algorithmus auszuwerten funktioniert zuverlässig, um Themen zu identifizieren. Allerdings hat die automatische Textanalyse Grenzen: Dies wird besonders deutlich, wenn es darum geht, den Kontext einzubeziehen oder Aussagen zu gewichten, die nur wenig Raum einnehmen, aber für die Gesamtbewertung wichtig sind. Das zeigt sich vor allem bei der <strong class="afd">AfD</strong>. Stark von der Norm abweichende Aussagen sowie die Verwendung von Wörtern in einem neuen Kontext können durch den Algorithmus nicht zuverlässig vorhergesagt werden - dabei sind genau das Kennzeichen von populistischen Parteien. </p>
       </div>
-
- <!--
-      <div class="block">
-        <div class="infobox">
-          <h3>Zum Projekt</h3>
-          <p>Die Trainingsdaten für den Algorithmus stammen aus dem <a href="https://manifesto-project.wzb.eu/" target='blank'>Manifesto Project</a>. Auch die Klassifizierung der Wahlprogramme (Domains und Labels) sowie die Berechnung der Rechts-Links-Einteilung wurden von diesem Forschungsprojekt übernommen. Details zum verwendeten Algorithmus finden sich <a href="https://github.com/felixbiessmann/fipi/" target='blank'>hier. </p>
-        </div>
-      </div> -->
 
     </section>
 

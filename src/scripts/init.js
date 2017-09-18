@@ -56,8 +56,4 @@ function init() {
       society.resize();
     }, 200);
   };
-
 }
-
-
-
