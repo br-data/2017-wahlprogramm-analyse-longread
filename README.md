@@ -1,7 +1,7 @@
 # Wahlprogramm-Analyse zur Bundestagswahl 2017
 Wir haben ein Experiment gewagt: Ein lernender Algorithmus hat für uns die Wahlprogramme der großen Parteien zur Bundestagswahl analysiert. Per Machine-Learning haben wir 810 Textabschnitte automatisch bewertet und in Kategorien einsortiert. So lassen sich die Standpunkte der Parteien gegenüberstellen und vergleichen. Eine Analyse von [BR Data](http://br.de/data).
 
-- **Live**: web.br.de/interaktiv/wahlprogramm-analyse-bundestagswahl
+- **Live**: http://web.br.de/interaktiv/wahlprogramm-analyse-bundestagswahl
 
 ## Verwendung
 1. Repository klonen `git clone https://...`
