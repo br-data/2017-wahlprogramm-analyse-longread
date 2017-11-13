@@ -2,6 +2,7 @@
 Wir haben ein Experiment gewagt: Ein lernender Algorithmus hat für uns die Wahlprogramme der großen Parteien zur Bundestagswahl analysiert. Per Machine-Learning haben wir 810 Textabschnitte automatisch bewertet und in Kategorien einsortiert. So lassen sich die Standpunkte der Parteien gegenüberstellen und vergleichen. Eine Analyse von [BR Data](http://br.de/data).
 
 - **Live**: http://web.br.de/interaktiv/wahlprogramm-analyse-bundestagswahl
+- **Datenanalyse**: https://github.com/br-data/wahlprogramm-analyse
 
 ## Verwendung
 1. Repository klonen `git clone https://...`
@@ -12,7 +13,7 @@ Wir haben ein Experiment gewagt: Ein lernender Algorithmus hat für uns die Wahl
 ## Daten
 Grundlage der Auswertung sind die Wahlprogramme deutscher Parteien zur Bundestagswahl 2017. Die Wahlprogramme wurde automatisiert pro Absatz nach politischer Einstellung (links/rechts) und Politikfeld klassifiziert. Der Einordnung liegt ein Machine-Learning-Algorithmus zugrunde, welcher mit Daten des [Manifesto-Projekts](https://manifestoproject.wzb.eu/) trainiert wurde.
 
-Die Maschine-Learning-Klassifizierung und die Analyse finden sich [hier](https://github.com/digitalegarage/wahlprogramm-analyse).
+Die Maschine-Learning-Klassifizierung und die Analyse finden sich [hier](https://github.com/br-data/wahlprogramm-analyse).
 
 ## Elemente
 Die Website baut auf dem [BR Data Longread Template](https://github.com/digitalegarage/longread-template) auf. Eine detaillierte Dokumentation der Standard-Elemente findet sich dort. Die hier dokumentierten Elemente sind projektspezifisch:
@@ -163,29 +164,26 @@ Ausführen den Grunt Tasks:
 Die optimierte Version des Webseite liegt nach Ausführen des Grunt Tasks unter `dist`. Sollten neue Bibliotheken hinzugefügt werden, müssen diese auch im Gruntfile hinzugefügt werden:
 
 ```javascript
-uglify: {
+concat: {
 
   dist: {
 
-    files: {
+    options: {
 
-      'dist/scripts/main.min.js': [
-        'node_modules/d3/d3.min.js', // Neue Bibliothek
-        'src/scripts/classList.js',
-        'src/scripts/navigation.js',
-        'src/scripts/marginals.js',
-        'src/scripts/intro.js',
-        'src/scripts/highlights.js',
-        'src/scripts/comparison.js',
-        'src/scripts/ranking.js',
-        'src/scripts/init.js'
-      ]
-    }
+      separator: '\n'
+    },
+
+    src: [
+      'node_modules/d3/build/d3.min.js', // Neue Bibliothek
+      'dist/scripts/main.min.js'
+    ],
+
+    dest: 'dist/scripts/main.min.js'
   }
 }
 ```
 
-Externe Stylesheet importiert man jedoch besser in einem Sass-Modul:
+Externe Stylesheet importiert man jedoch besser über CSS-Imports:
 
 ```Sass
 @import url(http://web.br.de/interaktiv/assets/libraries/leaflet/leaflet.v0.min.css)
