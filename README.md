@@ -1,7 +1,7 @@
 # Wahlprogramm-Analyse zur Bundestagswahl 2017
-Wir haben ein Experiment gewagt: Ein lernender Algorithmus hat für uns die Wahlprogramme der großen Parteien zur Bundestagswahl analysiert. Per Machine-Learning haben wir 810 Textabschnitte automatisch bewertet und in Kategorien einsortiert. So lassen sich die Standpunkte der Parteien gegenüberstellen und vergleichen. Eine Analyse von [BR Data](http://br.de/data).
+Wir haben ein Experiment gewagt: Ein lernender Algorithmus hat für uns die Wahlprogramme der großen Parteien zur Bundestagswahl analysiert. Per Machine-Learning haben wir 810 Textabschnitte automatisch bewertet und in Kategorien einsortiert. So lassen sich die Standpunkte der Parteien gegenüberstellen und vergleichen. Eine Analyse von [BR Data](https://br.de/data).
 
-- **Live**: http://web.br.de/interaktiv/wahlprogramm-analyse-bundestagswahl
+- **Live**: https://web.br.de/interaktiv/wahlprogramm-analyse-bundestagswahl
 - **Datenanalyse**: https://github.com/br-data/wahlprogramm-analyse
 
 ## Verwendung
@@ -186,7 +186,7 @@ concat: {
 Externe Stylesheet importiert man jedoch besser über CSS-Imports:
 
 ```Sass
-@import url(http://web.br.de/interaktiv/assets/libraries/leaflet/leaflet.v0.min.css)
+@import url(https://web.br.de/interaktiv/assets/libraries/leaflet/leaflet.v0.min.css)
 ```
 
 ## Verbesserungen
